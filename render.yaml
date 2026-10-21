@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: kasi-frost-nomusa-tech
+    runtime: static
+    buildCommand: npm ci && npm run build
+    staticPublishPath: ./dist
+    autoDeployTrigger: commit
